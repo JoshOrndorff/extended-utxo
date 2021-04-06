@@ -28,11 +28,14 @@ produce, however it greatly increases concurrent throughput as we will see in th
 TODO This needs to be fleshed out a lot. I did a rough draft of it a few years ago
 https://drive.google.com/file/d/11KiQND-tPFxqaYihbs6JIM8fNgVkGDai/view?usp=sharing
 
-### Currency Example
+### Fungible Token Example
 
 The term UTXO (unspent transaction output) comes from Bitcoin, the first blockchain to use it for
-fungible token transactions. There is already a concrete example of this in Substrate at
+fungible token transactions. A financial transaction will consume (or "spend") some inputs and
+produce some new outputs for the payee and perhaps some change to the spender. This model does not
+use `peek` at all.
 
+There is already a concrete example of this for Substrate at
 https://github.com/substrate-developer-hub/utxo-workshop/blob/master/runtime/src/utxo.rs
 
 ### Biological Reproduction Example
